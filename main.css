@@ -13,10 +13,11 @@ body {
   font-weight: 100;
   line-height: 1.7rem;
   background: white;
+  overflow: hidden;
 }
 .quiz-container {
   text-shadow: 1px 1px white;
-  padding: 8rem;
+  padding: 4rem;
   text-shadow: 0 1px #00000010;
   width: 100%;
   display: flex;
@@ -24,19 +25,36 @@ body {
   background: red;
   min-height: 100vh;
   text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  background-image: url("bg.png"); 
+}
+.top{
+  background-color: purple;
 }
 .title {
-  margin-top: 0;
-  margin-bottom: 3rem;
-  color: #00000050;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
   font-weight: 400;
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
 }
+.text {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
 .question {
   margin: 2rem 0;
   font-size: 1.5rem;
+  color: white;
 }
 .option {
   padding: 2rem;
@@ -110,6 +128,7 @@ button:focus {
 }
 .final-score {
   color: black;
+  font-size: 2rem;
 }
 .summary {
   font-size: 1rem;
