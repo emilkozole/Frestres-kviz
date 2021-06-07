@@ -10,10 +10,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 1.7rem;
   background: white;
   overflow: hidden;
+  filter: saturate(5);
 }
 .quiz-container {
   text-shadow: 1px 1px white;
@@ -38,7 +39,6 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: blue;
-  font-weight: 400;
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -47,7 +47,6 @@ body {
   margin-top: 0;
   margin-bottom: 1rem;
   color: black;
-  font-weight: 400;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -80,7 +79,6 @@ button {
   padding: 3rem 8rem;
   border: none;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-  font-weight: 300;
   color: white;
   outline: none;
   transform: scale(0.98);
@@ -99,11 +97,13 @@ button.previous {
   background: pink;
   filter: blur(0px);
   color: black;
+  font-weight: bold;
 }
 button.next {
   background: yellow;
   filter: blur(0px);
   color: black;
+  font-weight: bold;
 }
 button.restart {
   background: #0cf574;
