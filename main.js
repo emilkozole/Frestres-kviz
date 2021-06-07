@@ -83,15 +83,14 @@ function loadNextQuestion () {
     if(currentQuestion == totalQuestions) {
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Ti si ${totalScore} </br> Na podlagi vaših odgovorov vas je globoki um Preporoda poslal bodisi v SMER RAZSEŽNOSTI bodisi v SMER DIMENZIJ. Sledite svoji smeri.</h1>
+         `<h1 class="final-score">Ø > Ꝏ</h1>
          <div class="summary">
-            <h1>Povzetek</h1>
-            <p>Possible - Personality Traits, see below for a summary based on your results:</p>
-            <p>15 - 21- You Need Help</p>
-            <p>10 - 15 - Good Soul</p>
-            <p>5 - 10 - Meh </p>
-            <p>5 - Are You Even Real</p>
-        </div>*/
+            <h1>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Spet ste se znašli v izhodiščnem vesolju, kjer je piramida prezrcaljena nazaj skozi točko (0,0,0). Še zadnjič boste obšli rob piramide in videli začetek svoje poti.</h1>
+            <h1>Zaznamuje vas pretočnost in sočnost.
+            POSLANI STE BILI NA POT SPUŽEV IN DELFINOV 🐟🐬🐡
+            Prosimo, nadaljujte v levi smeri 
+            </h1>
+        </div>
         <button class="restart">Ponovi kviz</button>
          `;
         return;

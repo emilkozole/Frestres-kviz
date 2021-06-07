@@ -37,7 +37,7 @@ body {
 .title {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: blue;
   font-weight: 400;
   font-size: 2.5rem;
   text-align: center;
@@ -52,16 +52,18 @@ body {
   text-align: center;
 }
 .question {
-  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 60%;
   font-size: 1.5rem;
-  color: white;
+  color: yellow;
 }
 .option {
   padding: 2rem;
   color: black;
-  background: yellow;
+  background: #ffffff78;
   width: 80%;
   transition: all 0.3s;
+  filter: blur(0px);
   margin: auto;
 }
 .option:hover {
@@ -94,10 +96,14 @@ input:checked + label {
   background: red;
 }
 button.previous {
-  background: blue;
+  background: pink;
+  filter: blur(0px);
+  color: black;
 }
 button.next {
-  background: green;
+  background: yellow;
+  filter: blur(0px);
+  color: black;
 }
 button.restart {
   background: #0cf574;
@@ -141,7 +147,6 @@ button:focus {
   align-items: flex-start;
   padding: 0 2rem;
   margin-bottom: 2rem;
-  display: none;
 }
 .summary h1 {
   align-self: center;
