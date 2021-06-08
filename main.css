@@ -17,8 +17,7 @@ body {
   filter: saturate(5);
 }
 .quiz-container {
-  text-shadow: 1px 1px white;
-  padding: 4rem;
+  padding: 2rem;
   text-shadow: 0 1px #00000010;
   width: 100%;
   display: flex;
@@ -36,14 +35,18 @@ body {
   background-color: purple;
 }
 .title {
+  text-shadow: 2px 2px black;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: blue;
+  font-family: times;
+  color: white;
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1.0;
 }
 .text {
+  text-shadow: 2px 2px black;
   margin-top: 0;
   margin-bottom: 1rem;
   color: black;
@@ -52,15 +55,18 @@ body {
 }
 .question {
   margin: 2rem auto;
-  max-width: 60%;
+  max-width: 100%;
   font-size: 1.5rem;
-  color: yellow;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 .option {
+  text-shadow: 2px 2px black;
   padding: 2rem;
-  color: black;
+  color: white;
   background: #ffffff78;
-  width: 80%;
+  width: 100%;
+  font-size: 1.5rem;
   transition: all 0.3s;
   filter: blur(0px);
   margin: auto;
@@ -98,16 +104,19 @@ button.previous {
   filter: blur(0px);
   color: black;
   font-weight: bold;
+  display: none
 }
 button.next {
   background: yellow;
   filter: blur(0px);
   color: black;
   font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 50px;
 }
 button.restart {
   background: #0cf574;
-  color: #00000050;
+  color: #000000;
   font-size: 2rem;
   margin-bottom: 1rem;
   transition: all 0.4s;
@@ -130,7 +139,7 @@ button:focus {
   text-align: center;
   font-size: 2.5rem;
   min-height: 100vh;
-  background: yellow;
+  background-image: url("voda.png"); 
 }
 .final-score {
   color: black;
@@ -140,7 +149,6 @@ button:focus {
   font-size: 1rem;
   text-shadow: 1px 1px #ffffff50;
   color: #00000099;
-  background: yellow;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

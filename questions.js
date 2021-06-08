@@ -1,6 +1,6 @@
 const questions = [
   {
-    "question": "Predstavljajte si naslednje potovanje. Stopili ste ob vznožje piramide Preporoda. Obhodili jo boste v krogu in opazovali njene štiri ploskve. Med potovanjem boste odgovorili na 16 vprašanj, po 4 za vsako stranico piramide. Pri vsakem vprašanju vam bo piramida ponudila 4 odgovore. Na podlagi vaših odgovorov bo globoki um piramide spoznal vaše bistvo in vas usmeril na pravilno izmed dveh poti do freštreš: Preporoda. Razumeš?",
+    "question": "Predstavljajte si naslednje potovanje. Stopili ste ob vznožje piramide Preporoda. Obhodili jo boste v krogu in opazovali njene štiri ploskve. Med potovanjem boste odgovorili na 12 vprašanj, po 3 za vsako stranico piramide. Pri vsakem vprašanju vam bo piramida ponudila 4 odgovore. Na podlagi vaših odgovorov bo globoki um piramide spoznal vaše bistvo in vas usmeril na pravilno izmed dveh poti do freštreš: Preporoda. Razumeš?",
     "answer1": "Rojen sem bil za to",
     "answer1Total": "1",
     "answer2": "Ne razumem",
@@ -19,17 +19,6 @@ const questions = [
     "answer3": "Sebe v drugih, nemočne, prezrcaljene",
     "answer3Total": "3",
     "answer4": "Dno brez dna, nastalo zaradi norih eksperimentov",
-    "answer4Total": "4"
-  },
-  {
-    "question": "Ploskev vam ponuja, da izberete neko bitje, da bo eno leto ujeto v piramidi in mislilo na svoje napake, medtem pa bo svojo življenjsko energijo darovalo v dobrodelne namene (podobno kot v filmu Matrix, ampak nekoliko boleče). Kdo si po vašem zasluži kazen?",
-    "answer1": "Amorfne množice",
-    "answer1Total": "1",
-    "answer2": "Nekdo, ki je objektivno slab v skladu z družbenimi predstavami",
-    "answer2Total": "2",
-    "answer3": "Noben človek, pač pa bodisi BLOB (nekaj nejasnega in dolgočasno nedoločljivega) ali ANGEL (nekaj nejasnega in vznemirljivo nedoločljivega)",
-    "answer3Total": "3",
-    "answer4": "Nihče",
     "answer4Total": "4"
   },
   {
@@ -67,18 +56,6 @@ const questions = [
     "answer4Total": "4"
   },
   {
-    "question":
-      "Vbočena ploskev vas je vsrkala ne glede na vašo odločitev. Zdaj plavate v nekakšni prajuhi in ste priča prvim stvarem. Lahko postanete bog specifičnega stvarstva. Kakšen bog ste?",
-    "answer1": "Bog medu in mleka",
-    "answer1Total": "3",
-    "answer2": "Bog žvepla in toče",
-    "answer2Total": "2",
-    "answer3": "Moji roboti me ne zanimajo tako zelo",
-    "answer3Total": "1",
-    "answer4": "Pogosto se jezim na svoje stvarstvo, ampak potem obžalujem",
-    "answer4Total": "4"
-  },
-  {
     "question": "Piramida se upogne vase že do te mere, da postane črna luknja. Iztezate se proti jedru črne luknje – to je v fiziki t.i. proces “špagetifikacije”, tanjšanja in raztezanja prostorskih teles. Katera testeninska jed bi bili najraje?",
     "answer1": "Farfalle z ribjo omako",
     "answer1Total": "1",
@@ -110,18 +87,7 @@ const questions = [
     "answer3Total": "3",
     "answer4": "Kuriozni fenomen zbudi vaše zanimanje",
     "answer4Total": "4"
-  },
-  {
-    "question": "Vibriranje te ploskve prodira v kosti in se mu je nemogoče izogniti, ne na razumski ne na čutni način. Kako se po navadi sprijaznite z neizbežnim?",
-    "answer1": "Kot gekon (Phelsuma laticauda)",
-    "answer1Total": "1",
-    "answer2": "Kot kameleon (Chamaeleo zeylanicus)",
-    "answer2Total": "2",
-    "answer3": "Kot zelenec (Lacerta viridis)",
-    "answer3Total": "3",
-    "answer4": "Kot igvana (Brachylophus bulabula)",
-    "answer4Total": "4"
-  },  
+  }, 
   {
     "question": "Tedaj se vam ta glasbena uganka razjasni – vibracije prihajajo z vrha piramide, kjer za mešalnim pultom, visokim petdeset kubitov, širokim 30 kubitov in dolgim 9 kubitov, stoji DJ s stotimi očmi, ki se zdijo kot delfinove, in vsako oko ima šeststo šestnajst prstov, samih palcev in kazalcev, ki sučejo zagrizeno glasbo. Kako najlaže dosežete, da DJ upošteva vašo glasbeno željo?",
     "answer1": "Izrazito odobravate njegove glasbene odločitve",
