@@ -82,7 +82,7 @@ function loadNextQuestion() {
     //If the quiz is finished then we hide the questions container and show the results 
     if (currentQuestion == totalQuestions) {
         container.style.display = 'none';
-        var randomResult = Math.floor(Math.random() * 1);
+        var randomResult = Math.floor(Math.random() * 2);
 
         if (randomResult == 0) {
             result.innerHTML =
