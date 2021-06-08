@@ -18,7 +18,7 @@
 let currentQuestion = 0;
 let score = [];
 let selectedAnswersData = [];
-const totalQuestions =questions.length;
+const totalQuestions = questions.length;
 
 const container = document.querySelector('.quiz-container');
 const questionEl = document.querySelector('.question');
@@ -32,7 +32,7 @@ const restartButton = document.querySelector('.restart');
 const result = document.querySelector('.result');
 
 //Function to generate question 
-function generateQuestions (index) {
+function generateQuestions(index) {
     //Select each question by passing it a particular index
     const question = questions[index];
     const option1Total = questions[index].answer1Total;
@@ -52,10 +52,10 @@ function generateQuestions (index) {
 }
 
 
-function loadNextQuestion () {
+function loadNextQuestion() {
     const selectedOption = document.querySelector('input[type="radio"]:checked');
     //Check if there is a radio input checked
-    if(!selectedOption) {
+    if (!selectedOption) {
         alert('PROSIM ODGOVORI!');
         return;
     }
@@ -66,26 +66,39 @@ function loadNextQuestion () {
     score.push(answerScore);
 
     selectedAnswersData.push()
-    
+
 
     const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
     //Finally we incement the current question number ( to be used as the index for each array)
     currentQuestion++;
 
-        //once finished clear checked
-        selectedOption.checked = false;
+    //once finished clear checked
+    selectedOption.checked = false;
     //If quiz is on the final question
-    if(currentQuestion == totalQuestions - 1) {
+    if (currentQuestion == totalQuestions - 1) {
         nextButton.textContent = 'Končaj';
     }
     //If the quiz is finished then we hide the questions container and show the results 
-    if(currentQuestion == totalQuestions) {
+    if (currentQuestion == totalQuestions) {
         container.style.display = 'none';
-        result.innerHTML =
-         `<h1 class="final-score">Ø > Ꝏ</h1>
+        var randomResult = Math.floor(Math.random() * 1);
+
+        if (randomResult == 0) {
+            result.innerHTML =
+                `<h1 class="final-score">Ø > Ꝏ</h1>
          <div class="summary">
             <h1>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Spet ste se znašli v izhodiščnem vesolju, kjer je piramida prezrcaljena nazaj skozi točko (0,0,0). Še zadnjič boste obšli rob piramide in videli začetek svoje poti.</h1>
+        </div>
+        <button class="restart">Ponovi kviz</button>
+         `;
+
+        }
+
+        if (randomResult == 1) {
+            result.innerHTML =
+            `<h1 class="final-score">Ø > Ꝏ</h1>
+         <div class="summary">
             <h1>Zaznamuje vas pretočnost in sočnost.
             POSLANI STE BILI NA POT SPUŽEV IN DELFINOV 🐟🐬🐡
             Prosimo, nadaljujte v levi smeri 
@@ -93,6 +106,8 @@ function loadNextQuestion () {
         </div>
         <button class="restart">Ponovi kviz</button>
          `;
+        }
+
         return;
     }
     generateQuestions(currentQuestion);
@@ -110,12 +125,12 @@ function loadPreviousQuestion() {
 
 //Fuction to reset and restart the quiz;
 function restartQuiz(e) {
-    if(e.target.matches('button')) {
-    //reset array index and score
-    currentQuestion = 0;
-    score = [];
-    //Reload quiz to the start
-    location.reload();
+    if (e.target.matches('button')) {
+        //reset array index and score
+        currentQuestion = 0;
+        score = [];
+        //Reload quiz to the start
+        location.reload();
     }
 
 }
@@ -123,7 +138,7 @@ function restartQuiz(e) {
 
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
-previousButton.addEventListener('click',loadPreviousQuestion);
-result.addEventListener('click',restartQuiz);
+previousButton.addEventListener('click', loadPreviousQuestion);
+result.addEventListener('click', restartQuiz);
 
 
