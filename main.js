@@ -85,6 +85,9 @@ function loadNextQuestion() {
         var randomResult = Math.floor(Math.random() * 2);
 
         if (randomResult == 0) {
+
+            document.getElementsByClassName("result")[0].style.backgroundImage = "url('ogn.jpeg')"
+
             result.innerHTML =
                 `<h1 class="final-score">Ø > Ꝏ</h1>
          <div class="summary">
@@ -95,7 +98,10 @@ function loadNextQuestion() {
 
         }
 
-        if (randomResult == 1) {
+        else {
+
+            document.getElementsByClassName("result")[0].style.backgroundImage = "url('voda.png')"
+
             result.innerHTML =
             `<h1 class="final-score">Ø > Ꝏ</h1>
          <div class="summary">
@@ -112,6 +118,8 @@ function loadNextQuestion() {
     }
     generateQuestions(currentQuestion);
 }
+
+function lastScreen () {}
 
 //Function to load previous question
 function loadPreviousQuestion() {
