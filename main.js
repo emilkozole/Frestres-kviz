@@ -86,12 +86,16 @@ function loadNextQuestion() {
 
         if (randomResult == 0) {
 
-            document.getElementsByClassName("result")[0].style.backgroundImage = "url('ogn.jpeg')"
+            document.getElementsByClassName("result")[0].style.backgroundImage = "url('voda.png')"
 
             result.innerHTML =
                 `<h1 class="final-score">Ø > Ꝏ</h1>
          <div class="summary">
-            <h1>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Spet ste se znašli v izhodiščnem vesolju, kjer je piramida prezrcaljena nazaj skozi točko (0,0,0). Še zadnjič boste obšli rob piramide in videli začetek svoje poti.</h1>
+         <p>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Reši vas lahko le še eno. Pod vami se nahaja Komora prerojenja. Obstajajo štiri prerojenja (vsako prispeva ena od ploskev piramide: ČŠŽ, Redempcija, Insomnia in Atomik. Spustite se in doživeli boste prerojenje v skladu z vašo Potjo.</p>
+            <h1>Zaznamuje vas pretočnost in sočnost.
+            <br>POSLANI STE BILI NA POT SPUŽEV IN DELFINOV 🐟🐬🐡
+            <br>Prosimo, nadaljujte v levi smeri 
+            </h1>
         </div>
         <button class="restart">Ponovi kviz</button>
          `;
@@ -100,14 +104,15 @@ function loadNextQuestion() {
 
         else {
 
-            document.getElementsByClassName("result")[0].style.backgroundImage = "url('voda.png')"
+            document.getElementsByClassName("result")[0].style.backgroundImage = "url('ogn.jpeg')"
 
             result.innerHTML =
             `<h1 class="final-score">Ø > Ꝏ</h1>
          <div class="summary">
-            <h1>Zaznamuje vas pretočnost in sočnost.
-            POSLANI STE BILI NA POT SPUŽEV IN DELFINOV 🐟🐬🐡
-            Prosimo, nadaljujte v levi smeri 
+          <p>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Reši vas lahko le še eno. Pod vami se nahaja Komora prerojenja. Obstajajo štiri prerojenja (vsako prispeva ena od ploskev piramide: ČŠŽ, Redempcija, Insomnia in Atomik. Spustite se in doživeli boste prerojenje v skladu z vašo Potjo.</p>
+            <h1>Zaznamuje vas plazmatska kristalgija in energija.
+            <br>POSLANI STE BILI NA POT ŽARENJA IN ŽARJENJA 🔥💥☄️
+            <br>Prosimo, nadaljujte v desni smeri
             </h1>
         </div>
         <button class="restart">Ponovi kviz</button>

@@ -67,7 +67,7 @@ body {
   background: #ffffff78;
   width: 100%;
   font-size: 1.5rem;
-  transition: all 0.3s;
+  //*transition: all 0.3s;*//
   filter: blur(0px);
   margin: auto;
 }
@@ -162,3 +162,10 @@ button:focus {
 .summary h1 {
   align-self: center;
 }
+p {
+  line-height: 1.2;
+}
+h1{
+  line-height: 1.1;
+}
+
