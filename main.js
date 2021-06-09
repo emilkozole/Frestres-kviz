@@ -89,7 +89,7 @@ function loadNextQuestion() {
             document.getElementsByClassName("result")[0].style.backgroundImage = "url('voda.jpeg')"
 
             result.innerHTML =
-                `<h1 class="final-score">Ø</h1>
+                `<h1 class="final-score">Ø > <3</h1>
          <div class="summary">
          <p>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Reši vas lahko le še eno. Pod vami se nahaja Komora prerojenja. Obstajajo štiri prerojenja (vsako prispeva ena od ploskev piramide: ČŠŽ, Redempcija, Insomnia in Atomik. Spustite se in doživeli boste prerojenje v skladu z vašo Potjo.</p>
             <h1>Zaznamuje vas pretočnost in sočnost.
@@ -107,7 +107,7 @@ function loadNextQuestion() {
             document.getElementsByClassName("result")[0].style.backgroundImage = "url('ogn.jpeg')"
 
             result.innerHTML =
-            `<h1 class="final-score">Ø</h1>
+            `<h1 class="final-score">Ø > <3</h1>
          <div class="summary">
           <p>Vaša metoda ni delovala. Parazit, v resnici mistični skarabej, vas je vsesal vase. Reši vas lahko le še eno. Pod vami se nahaja Komora prerojenja. Obstajajo štiri prerojenja (vsako prispeva ena od ploskev piramide: ČŠŽ, Redempcija, Insomnia in Atomik. Spustite se in doživeli boste prerojenje v skladu z vašo Potjo.</p>
             <h1>Zaznamuje vas plazmatska kristalgija in energija.
